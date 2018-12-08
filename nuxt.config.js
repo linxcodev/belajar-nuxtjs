@@ -27,6 +27,8 @@ module.exports = {
   ** Global CSS
   */
   css: [
+    'bulma/css/bulma.css',
+    '~/assets/css/custom.css'
   ],
 
   /*
@@ -49,7 +51,7 @@ module.exports = {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
-      
+
     }
   }
 }
