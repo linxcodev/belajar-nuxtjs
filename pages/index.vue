@@ -10,11 +10,20 @@
         </h2>
       </div>
     </div>
+
+    {{ pokemons.rajaongkir.results }}
   </section>
 </template>
 
 <script>
-export default {
+import axios from '~/plugins/axios'
 
+export default {
+  asyncData() {
+    return axios.get('province')
+              .then(res => ({
+                pokemons: res.data
+              }))
+  }
 }
 </script>
