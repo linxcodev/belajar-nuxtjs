@@ -3,15 +3,23 @@
     <div class="hero-body">
       <div class="container">
         <h1 class="title">
-          Hero title
+          Menggunakan Api
         </h1>
         <h2 class="subtitle">
-          Hero subtitle
+          Dari nuxtjs
         </h2>
+        <br><br>
+        <div class="panel">
+          <div class="panel-heading">
+            Data Provinsi Di Indonesia
+          </div>
+          <div class="panel-block" v-for="prov in provs">
+            {{ prov.province }}
+          </div>
+        </div>
       </div>
     </div>
 
-    {{ pokemons.rajaongkir.results }}
   </section>
 </template>
 
@@ -22,7 +30,7 @@ export default {
   asyncData() {
     return axios.get('province')
               .then(res => ({
-                pokemons: res.data
+                provs: res.data.rajaongkir.results
               }))
   }
 }
