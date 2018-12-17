@@ -1,1 +1,8 @@
-
+.nuxt-link-exact-active {
+  cursor: default;
+  text-decoration: underline;
+}
+nav a {
+  margin-right: 1rem
+}
+.ml-20 {margin-left: 6rem}
