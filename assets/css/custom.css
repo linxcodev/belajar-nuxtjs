@@ -9,4 +9,7 @@ nav {
 nav a {
   margin-right: 1rem
 }
-.pl-20 {padding-left: 6rem}
+.pl-20 {padding-left: 1.5rem}
+@media screen and (min-width: 1280px) {
+  .pl-20 {padding-left: 6rem}
+}
