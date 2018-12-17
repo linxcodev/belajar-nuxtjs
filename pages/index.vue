@@ -1,18 +1,6 @@
 <template>
   <section class="hero is-info is-fullheight">
-    <div class="ml-20">
-      <items></items>
-    </div>
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title">
-          Ini Halaman Index
-        </h1>
-        <h2 class="subtitle">
-          Dari nuxtjs
-        </h2>
-      </div>
-    </div>
+    <items :data="'Index'"></items>
   </section>
 </template>
 
@@ -20,9 +8,6 @@
 import Items from '~/components/Items'
 
 export default {
-  components: {Items},
-  // async fetch ({store}) {
-  //   await store.dispatch('setItems','province');
-  // }
+  components: {Items}
 }
 </script>

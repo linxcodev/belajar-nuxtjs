@@ -1,30 +1,20 @@
 <template>
-  <!-- <section class="hero is-primary is-medium"> -->
-    <nav>
+  <div>
+    <nav class="pl-20">
       <nuxt-link to="/">Home</nuxt-link>
       <nuxt-link to="/city">City</nuxt-link>
     </nav>
-    <!-- <div class="hero-body">
+    <div class="hero-body">
       <div class="container">
         <h1 class="title">
-          Menggunakan Api
+          Ini Halaman {{ data }}
         </h1>
         <h2 class="subtitle">
           Dari nuxtjs
         </h2>
-        <br><br>
-        <div class="panel">
-          <div class="panel-heading">
-            Data Provinsi Di Indonesia
-          </div>
-          <div class="panel-block" v-for="data in datas">
-            {{ data.province }}
-          </div>
-        </div>
       </div>
-    </div> -->
-    <!-- Test -->
-  <!-- </section> -->
+    </div>
+  </div>
 </template>
 
 <script>
@@ -33,7 +23,8 @@ import { mapState } from 'vuex'
 export default {
   computed: mapState([
     'datas'
-  ])
+  ]),
+  props:['data'],
 }
 </script>
 <style scoped>

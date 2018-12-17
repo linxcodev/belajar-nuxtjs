@@ -2,7 +2,11 @@
   cursor: default;
   text-decoration: underline;
 }
+nav {
+  padding: 20px 0;
+  background-color: black
+}
 nav a {
   margin-right: 1rem
 }
-.ml-20 {margin-left: 6rem}
+.pl-20 {padding-left: 6rem}
